@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>foxup | Mobile Recharge, UAE Bill Payments &amp; Vouchers for Shops in Dubai</title>
+<meta name="description" content="foxup turns any counter into a mobile recharge, UAE bill-payment and entertainment voucher sales point, with card payments built in. One compact terminal, one merchant wallet, settled instantly. Serving shops across Dubai and the UAE." />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://foxuppay.com/" />
+
+<!-- Local / geo signals -->
+<meta name="geo.region" content="AE-DU" />
+<meta name="geo.placename" content="Dubai" />
+<meta name="geo.position" content="25.2048;55.2708" />
+<meta name="ICBM" content="25.2048, 55.2708" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="foxup" />
+<meta property="og:title" content="foxup — Mobile Recharge, Bill Pay &amp; Vouchers, One Terminal" />
+<meta property="og:description" content="The recharge, bill-pay and voucher app that lives inside your card terminal. Sell mobile top-ups, settle UAE bills and sell entertainment vouchers instantly, from one counter." />
+<meta property="og:url" content="https://foxuppay.com/" />
+<meta property="og:image" content="https://foxuppay.com/icons/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="foxup payment terminal with the tagline Get paid the instant you tap" />
+<meta property="og:locale" content="en_AE" />
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="foxup — Mobile Recharge, Bill Pay &amp; Vouchers, One Terminal" />
+<meta name="twitter:description" content="Sell mobile recharge, settle UAE bills and sell entertainment vouchers from one compact terminal. Instant wallet settlement for merchants across Dubai &amp; the UAE." />
+<meta name="twitter:image" content="https://foxuppay.com/icons/og-image.png" />
+
+<!-- Theme + icons -->
+<meta name="theme-color" content="#1E2A5A" />
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="icons/favicon-180.png" />
+<link rel="manifest" href="site.webmanifest" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "foxup",
+  "alternateName": "foxup pay",
+  "url": "https://foxuppay.com/",
+  "logo": "https://foxuppay.com/logo.png",
+  "image": "https://foxuppay.com/icons/og-image.png",
+  "description": "foxup provides mobile recharge, UAE bill-payment and entertainment voucher sales services, delivered through a card payment terminal, for merchants across Dubai and the United Arab Emirates.",
+  "email": "sales@foxuppay.com",
+  "telephone": "+971526989355",
+  "areaServed": { "@type": "Country", "name": "United Arab Emirates" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE" },
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "telephone": "+971526989355",
+    "email": "sales@foxuppay.com",
+    "areaServed": "AE",
+    "availableLanguage": ["en", "ar"]
+  }]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --indigo-950:#0B1130;
+    --indigo-900:#1E2A5A;
+    --indigo-800:#28356E;
+    --indigo-700:#374689;
+    --indigo-100:#E4E7F5;
+    --indigo-050:#F5F6FB;
+    --coral-500:#F95858;
+    --coral-400:#FF7A72;
+    --coral-100:#FFE3E0;
+    --blue-vivid:#2A4FDB;
+    --ink:#151A33;
+    --ink-soft:#565C82;
+    --paper:#FBFBFD;
+    --line:rgba(21,26,51,0.09);
+    --mono: 'JetBrains Mono', monospace;
+    --sans: 'Manrope', sans-serif;
+    --ease: cubic-bezier(.16,.84,.44,1);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    background:var(--paper);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--coral-500); color:#fff;}
+  img,svg{display:block; max-width:100%;}
+  a{color:inherit;}
+  .wrap{max-width:1220px; margin:0 auto; padding:0 32px;}
+  @media (max-width:720px){ .wrap{padding:0 20px;} }
+
+  /* reveal */
+  [data-reveal]{opacity:0; transform:translateY(28px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  [data-reveal].in{opacity:1; transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){
+    [data-reveal]{opacity:1; transform:none; transition:none;}
+    *{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important;}
+  }
+
+  /* ============ NAV ============ */
+  header.nav{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    padding:18px 0;
+    transition:background .4s var(--ease), box-shadow .4s var(--ease), padding .4s var(--ease);
+  }
+  header.nav.scrolled{
+    background:rgba(251,251,253,0.82);
+    backdrop-filter:blur(14px) saturate(160%);
+    box-shadow:0 1px 0 var(--line);
+    padding:12px 0;
+  }
+  .nav-inner{display:flex; align-items:center; justify-content:space-between; gap:20px;}
+  .logo{display:flex; align-items:center; gap:2px; font-family:var(--sans); font-weight:800; font-size:24px; letter-spacing:-0.02em; user-select:none;}
+  .logo .fo{color:var(--indigo-900);}
+  .logo .up{color:var(--coral-500);}
+  .logo .mark{width:26px; height:20px; margin:0 1px; position:relative; top:1px;}
+  .logo.on-dark .fo{color:#fff;}
+  .logo-img{height:28px; width:auto; display:block; user-select:none;}
+  .nav-inner .logo-img{height:36px;}
+  @media (min-width:981px){ .nav-inner .logo-img{height:38px;} }
+  .navlinks{display:flex; align-items:center; gap:36px; font-size:14.5px; font-weight:600; color:var(--ink-soft);}
+  .navlinks a{text-decoration:none; position:relative; padding:4px 0; transition:color .25s;}
+  .navlinks a:hover{color:var(--indigo-900);}
+  .navlinks a::after{content:'';position:absolute; left:0; bottom:0; width:0; height:2px; background:var(--coral-500); transition:width .3s var(--ease);}
+  .navlinks a:hover::after{width:100%;}
+  @media (max-width:860px){ .navlinks{display:none;} }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:var(--sans); font-weight:700; font-size:14.5px;
+    padding:11px 20px; border-radius:100px; border:none; cursor:pointer;
+    text-decoration:none; white-space:nowrap;
+    transition:transform .35s var(--ease), box-shadow .35s var(--ease), background .3s;
+  }
+  .btn-coral{background:var(--coral-500); color:#fff; box-shadow:0 8px 20px -6px rgba(249,88,88,.55);}
+  .btn-coral:hover{transform:translateY(-2px); box-shadow:0 12px 26px -6px rgba(249,88,88,.65);}
+  .btn-ghost{background:transparent; color:var(--indigo-900); border:1.5px solid var(--line);}
+  .btn-ghost:hover{border-color:var(--indigo-900); transform:translateY(-2px);}
+  .btn svg{width:16px; height:16px;}
+
+  /* ============ HERO ============ */
+  .hero{
+    position:relative;
+    padding:168px 0 90px;
+    background:
+      radial-gradient(900px 480px at 82% -8%, rgba(249,88,88,.14), transparent 60%),
+      radial-gradient(760px 560px at 6% 6%, rgba(42,79,219,.11), transparent 62%),
+      var(--paper);
+    overflow:hidden;
+  }
+  @media (max-width:720px){ .hero{padding:120px 0 56px;} }
+  .hero-grid{
+    display:grid; grid-template-columns:1.02fr 0.98fr; gap:40px; align-items:center;
+    grid-template-areas:
+      "heading image"
+      "desc    image";
+  }
+  .hero-heading{grid-area:heading;}
+  .hero-desc{grid-area:desc;}
+  .stage-col{grid-area:image;}
+  @media (max-width:980px){
+    .hero-grid{
+      grid-template-columns:1.35fr 1fr; column-gap:16px; row-gap:28px; align-items:start;
+      grid-template-areas:
+        "heading image"
+        "desc    desc";
+    }
+  }
+
+  h1.hero-h{
+    font-size:clamp(38px, 5.4vw, 66px);
+    line-height:0.98; letter-spacing:-0.035em; font-weight:800;
+    margin:0 0 22px; color:var(--indigo-950);
+  }
+  @media (max-width:980px){ h1.hero-h{font-size:clamp(32px, 10vw, 42px); line-height:1.04; margin:0;} }
+  h1.hero-h em{
+    font-style:normal; color:var(--coral-500); position:relative; white-space:nowrap;
+  }
+  .hero-sub{
+    font-size:18px; line-height:1.6; color:var(--ink-soft); max-width:480px; margin:0 0 36px; font-weight:500;
+  }
+  .hero-ctas{display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-bottom:52px;}
+  @media (max-width:980px){
+    .hero-ctas{gap:10px; flex-wrap:nowrap; margin-bottom:36px;}
+    .hero-ctas .btn{padding:10px 14px; font-size:12.5px; gap:6px; white-space:nowrap;}
+    .hero-ctas .btn svg{width:14px; height:14px;}
+  }
+  @media (max-width:360px){
+    .hero-ctas .btn{padding:9px 11px; font-size:11.5px;}
+  }
+
+  .hero-proof{display:flex; gap:34px; flex-wrap:wrap;}
+  .proof-item .num{font-family:var(--mono); font-size:22px; font-weight:600; color:var(--indigo-950); letter-spacing:-0.02em;}
+  .proof-item .lbl{font-size:12.5px; color:var(--ink-soft); font-weight:600; margin-top:2px;}
+  @media (max-width:980px){
+    .hero-proof{display:grid; grid-template-columns:repeat(3, 1fr); gap:12px;}
+    .proof-item .num{font-size:18px;}
+    .proof-item .lbl{font-size:10.5px; line-height:1.3;}
+  }
+
+  /* ---- device photo ---- */
+  .stage{ position:relative; width:100%; display:flex; align-items:center; justify-content:center; }
+  .device-fx{
+    position:absolute; width:100%; height:80%; border-radius:50%;
+    background:radial-gradient(circle at 50% 45%, rgba(249,88,88,.14), transparent 66%);
+    filter:blur(20px); z-index:0;
+  }
+  .term-frame{
+    position:relative; z-index:2; display:inline-block; max-width:100%;
+  }
+  .term-img{
+    height:min(630px, 74vh); width:auto; max-width:100%; display:block;
+    filter:drop-shadow(0 46px 54px -22px rgba(11,17,48,.5)) drop-shadow(0 14px 18px -10px rgba(11,17,48,.22));
+  }
+  .stage-col{width:100%; display:flex; flex-direction:column; align-items:center;}
+  @media (max-width:980px){
+    .term-frame{width:100%; max-width:280px;}
+    .term-img{height:auto; width:100%;}
+  }
+
+  /* ============ MARQUEE ============ */
+  .marquee-sec{border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--indigo-050); padding:22px 0; overflow:hidden;}
+  .marquee{display:flex; gap:64px; white-space:nowrap; width:max-content; animation:scroll 26s linear infinite;}
+  .marquee span{font-family:var(--mono); font-size:13px; color:var(--ink-soft); font-weight:500; display:flex; align-items:center; gap:10px;}
+  .marquee span::before{content:''; width:5px; height:5px; border-radius:50%; background:var(--coral-500);}
+  @keyframes scroll{from{transform:translateX(0)} to{transform:translateX(-50%)}}
+
+  /* ============ SECTION HEADS ============ */
+  .sec{padding:120px 0;}
+  @media (max-width:720px){ .sec{padding:56px 0;} }
+  .sec-head{max-width:640px; margin:0 0 60px;}
+  .tag{font-family:var(--mono); font-size:12.5px; font-weight:600; color:var(--coral-500); letter-spacing:.04em; text-transform:uppercase; margin-bottom:14px; display:block;}
+  h2.sec-h{font-size:clamp(30px,3.6vw,44px); line-height:1.08; letter-spacing:-0.03em; font-weight:800; color:var(--indigo-950); margin:0 0 16px;}
+  .sec-p{font-size:16.5px; color:var(--ink-soft); line-height:1.65; font-weight:500;}
+  .sec-head.center{margin-left:auto; margin-right:auto; text-align:center;}
+
+  /* ============ ADVANTAGE CARDS ============ */
+  .adv-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
+  @media (max-width:980px){ .adv-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .adv-grid{grid-template-columns:1fr;} }
+  .adv-card{
+    background:#fff; border:1px solid var(--line); border-radius:20px; padding:28px 24px;
+    transform-style:preserve-3d; transition:transform .45s var(--ease), box-shadow .45s var(--ease), border-color .3s;
+    cursor:default;
+  }
+  .adv-card:hover{
+    transform:perspective(800px) rotateX(4deg) rotateY(-4deg) translateY(-6px);
+    box-shadow:0 30px 50px -22px rgba(11,17,48,.22);
+    border-color:transparent;
+  }
+  .adv-ic{
+    width:46px; height:46px; border-radius:13px; margin-bottom:20px;
+    background:linear-gradient(135deg, var(--indigo-900), var(--indigo-700));
+    display:flex; align-items:center; justify-content:center;
+  }
+  .adv-ic svg{width:22px; height:22px; stroke:#fff; fill:none; stroke-width:1.8;}
+  .adv-card:nth-child(2n) .adv-ic{background:linear-gradient(135deg, var(--coral-500), var(--coral-400));}
+  .adv-card h3{font-size:17px; font-weight:700; margin:0 0 8px; letter-spacing:-0.01em; color:var(--indigo-950);}
+  .adv-card p{font-size:14px; line-height:1.6; color:var(--ink-soft); margin:0; font-weight:500;}
+
+  /* ============ FEATURE SHOWCASE ============ */
+  .feat-row{display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center; margin-bottom:130px;}
+  .feat-row:last-child{margin-bottom:0;}
+  .feat-row.rev{direction:rtl;}
+  .feat-row.rev > *{direction:ltr;}
+  @media (max-width:900px){ .feat-row, .feat-row.rev{grid-template-columns:1fr; direction:ltr; gap:40px; margin-bottom:90px;} }
+  .feat-index{font-family:var(--mono); font-size:13px; color:var(--coral-500); font-weight:600; margin-bottom:16px; display:block;}
+  .feat-row h3{font-size:clamp(24px,2.6vw,32px); font-weight:800; letter-spacing:-0.025em; color:var(--indigo-950); margin:0 0 16px; line-height:1.12;}
+  .feat-row p{font-size:16px; line-height:1.7; color:var(--ink-soft); font-weight:500; margin:0 0 22px;}
+  .feat-list{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:11px;}
+  .feat-list li{display:flex; gap:10px; align-items:flex-start; font-size:14.5px; color:var(--ink); font-weight:600;}
+  .feat-list svg{width:17px; height:17px; flex-shrink:0; margin-top:2px; stroke:var(--coral-500); stroke-width:2.5;}
+
+  .visual-card{
+    perspective:1400px;
+  }
+  .visual-inner{
+    background:linear-gradient(155deg, var(--indigo-950), var(--indigo-900) 60%, #1B2454);
+    border-radius:26px; padding:40px 34px; position:relative; overflow:hidden;
+    min-height:340px; display:flex; flex-direction:column; justify-content:center;
+    transform-style:preserve-3d; transition:transform .5s var(--ease);
+    box-shadow:0 40px 70px -35px rgba(11,17,48,.55);
+  }
+  .visual-inner:hover{transform:rotateY(-4deg) rotateX(2deg);}
+  .visual-inner::before{
+    content:''; position:absolute; inset:0;
+    background:radial-gradient(420px 260px at 85% 0%, rgba(249,88,88,.25), transparent 60%);
+  }
+  .vi-mono{font-family:var(--mono); position:relative; z-index:2;}
+
+  /* v1 wallet visual */
+  .v-wallet{color:#fff; position:relative; z-index:2;}
+  .v-wallet .row1{display:flex; justify-content:space-between; align-items:center; margin-bottom:22px;}
+  .v-wallet .pill{background:rgba(255,255,255,.1); border-radius:100px; padding:6px 12px; font-size:11px; font-weight:600;}
+  .v-wallet .big{font-size:38px; font-weight:700; letter-spacing:-0.02em; margin-bottom:6px;}
+  .v-wallet .sub{opacity:.6; font-size:12px; font-weight:500; margin-bottom:26px;}
+  .v-wallet .bars{display:flex; align-items:flex-end; gap:7px; height:70px;}
+  .v-wallet .bar{flex:1; background:linear-gradient(180deg, var(--coral-500), rgba(249,88,88,.3)); border-radius:5px 5px 0 0;}
+
+  /* v2 terminal spec visual */
+  .spec-grid{position:relative; z-index:2; display:grid; grid-template-columns:1fr 1fr; gap:18px;}
+  .spec{border-top:1px solid rgba(255,255,255,.14); padding-top:12px;}
+  .spec .l{color:rgba(255,255,255,.5); font-size:10.5px; text-transform:uppercase; letter-spacing:.04em; margin-bottom:6px;}
+  .spec .v{color:#fff; font-size:18px; font-weight:600;}
+
+  /* v3 settlement flow visual */
+  .flow{position:relative; z-index:2; display:flex; flex-direction:column; gap:0;}
+  .flow-step{display:flex; align-items:center; gap:14px; padding:12px 0;}
+  .flow-dot{width:34px; height:34px; border-radius:50%; background:rgba(255,255,255,.08); border:1.5px solid rgba(255,255,255,.2); display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:12px; color:#fff; flex-shrink:0;}
+  .flow-step.active .flow-dot{background:var(--coral-500); border-color:var(--coral-500);}
+  .flow-line{width:1.5px; height:20px; background:rgba(255,255,255,.2); margin-left:17px;}
+  .flow-txt b{color:#fff; font-size:14px; display:block; margin-bottom:2px;}
+  .flow-txt span{color:rgba(255,255,255,.55); font-size:12.5px;}
+
+  /* v4 services grid visual */
+  .svc-grid{position:relative; z-index:2; display:grid; grid-template-columns:repeat(3,1fr); gap:10px;}
+  .svc{background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.1); border-radius:12px; padding:14px 10px; text-align:center;}
+  .svc svg{width:20px; height:20px; stroke:var(--coral-400); margin:0 auto 8px; stroke-width:1.8; fill:none;}
+  .svc span{color:#fff; font-size:11.5px; font-weight:600;}
+
+  /* ============ HOW IT WORKS ============ */
+  .steps-wrap{position:relative;}
+  .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; position:relative; z-index:1;}
+  .step{
+    position:relative; background:#fff; border-radius:18px; padding:26px 24px 26px;
+    border:1px solid var(--line);
+    transition:transform .4s var(--ease), box-shadow .4s var(--ease);
+  }
+  .step::before{
+    /* coral accent edge that fills on hover */
+    content:''; position:absolute; left:24px; right:24px; top:0; height:3px;
+    background:var(--coral-500); border-radius:0 0 3px 3px;
+    transform:scaleX(0); transform-origin:left; transition:transform .45s var(--ease);
+  }
+  .step:hover{transform:translateY(-6px); box-shadow:0 26px 44px -24px rgba(11,17,48,.28);}
+  .step:hover::before{transform:scaleX(1);}
+  .step-head{display:flex; align-items:center; gap:12px; margin-bottom:18px;}
+  .step-num{
+    width:44px; height:44px; border-radius:13px; flex-shrink:0;
+    background:var(--indigo-900);
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--mono); font-weight:600; font-size:14px; color:#fff;
+    transition:background .35s var(--ease), transform .35s var(--ease);
+  }
+  .step:hover .step-num{background:var(--coral-500); transform:scale(1.06) rotate(-4deg);}
+  .step-rule{flex:1; height:1px; background:var(--line);}
+  .step-ic{width:20px; height:20px; flex-shrink:0; stroke:var(--indigo-700); fill:none; stroke-width:1.8;}
+  .step h4{font-size:17.5px; font-weight:700; margin:0 0 9px; color:var(--indigo-950); letter-spacing:-0.015em; line-height:1.25;}
+  .step p{font-size:14.5px; color:var(--ink-soft); line-height:1.65; margin:0; font-weight:500;}
+  /* connector arrows between cards on desktop */
+  .step:not(:last-child)::after{
+    content:''; position:absolute; right:-16px; top:48px; z-index:2;
+    width:8px; height:8px; border-top:2px solid var(--coral-500); border-right:2px solid var(--coral-500);
+    transform:rotate(45deg);
+  }
+  @media (max-width:820px){
+    .steps{grid-template-columns:1fr; gap:16px;}
+    .step:not(:last-child)::after{
+      right:auto; left:46px; top:auto; bottom:-13px; transform:rotate(135deg);
+    }
+  }
+
+  /* ============ COVERAGE (countries / carriers / bills) ============ */
+  .cov-block{margin-bottom:56px;}
+  .cov-block:last-child{margin-bottom:0;}
+  .cov-h{display:flex; align-items:baseline; gap:10px; margin-bottom:22px; flex-wrap:wrap;}
+  .cov-h h3{font-size:19px; font-weight:800; letter-spacing:-0.015em; color:var(--indigo-950); margin:0;}
+  .cov-h span{font-size:13px; color:var(--ink-soft); font-weight:500;}
+
+  .flag-ic{width:26px; height:18px; border-radius:4px; flex-shrink:0; display:block; box-shadow:0 0 0 1px rgba(11,17,48,.12);}
+
+  .chip-grid{display:flex; flex-wrap:wrap; gap:12px;}
+  .chip{
+    display:inline-flex; align-items:center; gap:10px;
+    background:#fff; border:1px solid var(--line); border-radius:100px;
+    padding:9px 18px 9px 10px; font-weight:700; font-size:14.5px; color:var(--indigo-950);
+    transition:transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s;
+  }
+  .chip:hover{transform:translateY(-3px); box-shadow:0 14px 26px -14px rgba(11,17,48,.3); border-color:transparent;}
+  .chip.more{background:var(--indigo-050); color:var(--ink-soft); border-style:dashed; font-weight:600; padding:9px 18px;}
+
+  .carrier-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:16px;}
+  @media (max-width:980px){ .carrier-grid{grid-template-columns:repeat(3,1fr);} }
+  @media (max-width:560px){ .carrier-grid{grid-template-columns:repeat(2,1fr);} }
+  .carrier-col{background:#fff; border:1px solid var(--line); border-radius:16px; padding:18px 16px;}
+  .carrier-col .country{
+    display:flex; align-items:center; gap:10px;
+    font-weight:800; font-size:15.5px; letter-spacing:-0.01em; color:var(--indigo-950);
+    padding-bottom:13px; margin-bottom:15px; border-bottom:1.5px solid var(--line);
+  }
+  .carrier-col .country .flag-ic{width:30px; height:20px;}
+  .carrier-col ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px;}
+  .carrier-col li{display:flex; align-items:center; gap:9px; font-size:13px; color:var(--ink-soft); font-weight:600;}
+  .carrier-col li .dot{
+    width:22px; height:22px; border-radius:50%; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--sans); font-weight:800; font-size:10.5px; color:#fff;
+  }
+  .carrier-col li .logo-tile{
+    width:28px; height:28px; border-radius:8px; flex-shrink:0;
+    background:#fff; border:1px solid var(--line); padding:3px;
+    display:flex; align-items:center; justify-content:center; overflow:hidden;
+  }
+  .carrier-col li .logo-tile img{width:100%; height:100%; object-fit:contain; display:block;}
+  .carrier-col.more{grid-column:1 / -1; display:flex; align-items:center; justify-content:center; text-align:center; border-style:dashed; color:var(--ink-soft); font-size:13px; font-weight:600; padding:14px 16px;}
+
+  .bill-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:12px;}
+  @media (max-width:820px){ .bill-grid{grid-template-columns:repeat(3,1fr);} }
+  @media (max-width:560px){ .bill-grid{grid-template-columns:repeat(2,1fr);} }
+  .bill-chip{
+    display:flex; flex-direction:column; align-items:center; text-align:center; gap:10px;
+    background:#fff; border:1px solid var(--line); border-radius:16px; padding:18px 10px;
+    font-weight:700; font-size:13px; color:var(--indigo-950);
+    transition:transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s;
+  }
+  .bill-chip:hover{transform:translateY(-4px); box-shadow:0 16px 30px -16px rgba(11,17,48,.3); border-color:transparent;}
+  .bill-ic{width:40px; height:40px; border-radius:12px; display:flex; align-items:center; justify-content:center; flex-shrink:0; overflow:hidden;}
+  .bill-ic svg{width:20px; height:20px; stroke:#fff; fill:none; stroke-width:2;}
+  .bill-ic img{width:100%; height:100%; object-fit:cover; display:block;}
+  .bill-ic.pad{background:#fff; border:1px solid var(--line); padding:6px;}
+  .bill-ic.pad img{object-fit:contain;}
+  .bill-chip.more{color:var(--ink-soft); border-style:dashed; justify-content:center;}
+  .bill-chip.more .bill-ic{background:var(--indigo-050);}
+  .bill-chip.more .bill-ic svg{stroke:var(--ink-soft);}
+
+  /* ============ CTA / WHATSAPP SECTION ============ */
+  .cta-sec{padding:0 0 120px;}
+  @media (max-width:720px){ .cta-sec{padding:0 0 56px;} }
+  .cta-box{
+    position:relative; overflow:hidden;
+    background:linear-gradient(155deg, var(--indigo-950), var(--indigo-900) 65%, #232F63);
+    border-radius:32px; padding:76px 60px; text-align:center;
+  }
+  .cta-box::before{
+    content:''; position:absolute; inset:0;
+    background:radial-gradient(600px 300px at 50% 0%, rgba(249,88,88,.22), transparent 65%);
+  }
+  .cta-box::after{
+    content:''; position:absolute; width:340px; height:340px; border-radius:50%;
+    border:1px solid rgba(255,255,255,.06); top:-120px; right:-80px;
+  }
+  @media (max-width:720px){ .cta-box{padding:56px 26px;} }
+  .cta-box h2{position:relative; z-index:2; color:#fff; font-size:clamp(28px,4vw,42px); font-weight:800; letter-spacing:-0.03em; margin:0 0 16px; line-height:1.1;}
+  .cta-box p{position:relative; z-index:2; color:rgba(255,255,255,.65); font-size:16.5px; max-width:480px; margin:0 auto 36px; font-weight:500; line-height:1.6;}
+  .cta-btns{position:relative; z-index:2; display:flex; gap:16px; justify-content:center; flex-wrap:wrap;}
+  .btn-whatsapp{
+    background:#25D366; color:#fff; box-shadow:0 10px 26px -8px rgba(37,211,102,.55);
+  }
+  .btn-whatsapp:hover{box-shadow:0 14px 32px -8px rgba(37,211,102,.65);}
+
+  /* ============ FOOTER ============ */
+  footer{border-top:1px solid var(--line); padding:52px 0 34px;}
+  .foot-top{display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:30px; margin-bottom:40px;}
+  .foot-brand p{font-size:13.5px; color:var(--ink-soft); max-width:260px; line-height:1.6; margin:14px 0 0; font-weight:500;}
+  .foot-cols{display:flex; gap:64px; flex-wrap:wrap;}
+  .foot-col h5{font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-soft); font-weight:700; margin:0 0 14px;}
+  .foot-col a{display:block; font-size:14px; color:var(--indigo-950); text-decoration:none; font-weight:600; margin-bottom:10px; transition:color .2s;}
+  .foot-col a:hover{color:var(--coral-500);}
+  .foot-bottom{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; padding-top:24px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-soft); font-weight:500;}
+
+  /* floating whatsapp */
+  .wa-float{
+    position:fixed; bottom:26px; right:26px; z-index:200;
+    width:58px; height:58px; border-radius:50%; background:#25D366;
+    display:flex; align-items:center; justify-content:center; text-decoration:none;
+    box-shadow:0 12px 28px -8px rgba(37,211,102,.6);
+    animation:waFloat 3s ease-in-out infinite;
+    transition:transform .3s var(--ease);
+  }
+  .wa-float:hover{transform:scale(1.1);}
+  .wa-float svg{width:28px; height:28px; fill:#fff;}
+  @keyframes waFloat{0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)}}
+</style>
+</head>
+<body>
+
+<!-- ============ SVG SYMBOL DEFS ============ -->
+<svg width="0" height="0" style="position:absolute">
+  <!-- light-surface mark: coral tick + indigo stroke (brand primary) -->
+  <symbol id="xmark" viewBox="0 0 100 76">
+    <path d="M0 22 L24 22 L40 38 L64 6 L88 6 L48 56 Z" fill="var(--coral-500)"/>
+    <path d="M22 76 L46 76 L88 22 L64 22 Z" fill="var(--indigo-900)"/>
+  </symbol>
+  <!-- dark-surface mark: coral tick + white stroke, for use on indigo/blue backgrounds -->
+  <symbol id="xmark-dark" viewBox="0 0 100 76">
+    <path d="M0 22 L24 22 L40 38 L64 6 L88 6 L48 56 Z" fill="var(--coral-500)"/>
+    <path d="M22 76 L46 76 L88 22 L64 22 Z" fill="#ffffff"/>
+  </symbol>
+
+  <!-- ---- country flags (simplified, vector) ---- -->
+  <symbol id="flag-ae" viewBox="0 0 30 20">
+    <rect width="30" height="20" fill="#fff"/>
+    <rect width="30" height="6.67" fill="#00732F"/>
+    <rect y="13.33" width="30" height="6.67" fill="#000"/>
+    <rect width="9" height="20" fill="#FF0000"/>
+  </symbol>
+  <symbol id="flag-in" viewBox="0 0 30 20">
+    <rect width="30" height="20" fill="#fff"/>
+    <rect width="30" height="6.67" fill="#FF9933"/>
+    <rect y="13.33" width="30" height="6.67" fill="#138808"/>
+    <circle cx="15" cy="10" r="2.2" fill="none" stroke="#000080" stroke-width="0.5"/>
+    <circle cx="15" cy="10" r="0.6" fill="#000080"/>
+  </symbol>
+  <symbol id="flag-pk" viewBox="0 0 30 20">
+    <rect width="30" height="20" fill="#01411C"/>
+    <rect width="7.5" height="20" fill="#fff"/>
+    <circle cx="22.5" cy="7" r="3.2" fill="#fff"/>
+    <circle cx="23.6" cy="7" r="2.7" fill="#01411C"/>
+    <polygon points="25,5.4 25.4,6.5 26.5,6.5 25.6,7.2 25.9,8.3 25,7.6 24.1,8.3 24.4,7.2 23.5,6.5 24.6,6.5" fill="#fff"/>
+  </symbol>
+  <symbol id="flag-bd" viewBox="0 0 30 20">
+    <rect width="30" height="20" fill="#006A4E"/>
+    <circle cx="13" cy="10" r="5.5" fill="#F42A41"/>
+  </symbol>
+  <symbol id="flag-np" viewBox="0 0 30 20">
+    <rect width="30" height="20" fill="#DC143C" stroke="#003893" stroke-width="1.4"/>
+    <circle cx="10.5" cy="6.5" r="2.1" fill="#fff"/>
+    <circle cx="11.5" cy="5.9" r="1.8" fill="#DC143C"/>
+    <circle cx="10.5" cy="14" r="1.8" fill="#fff"/>
+  </symbol>
+  <symbol id="flag-ph" viewBox="0 0 30 20">
+    <rect width="30" height="20" fill="#0038A8"/>
+    <rect y="10" width="30" height="10" fill="#CE1126"/>
+    <polygon points="0,0 0,20 13,10" fill="#fff"/>
+    <circle cx="6" cy="10" r="1.8" fill="#FCD116"/>
+  </symbol>
+  <symbol id="flag-lk" viewBox="0 0 30 20">
+    <rect width="30" height="20" fill="#FFB700"/>
+    <rect x="1.4" y="1.4" width="27.2" height="17.2" fill="#8D153A"/>
+    <rect x="1.4" y="1.4" width="4" height="17.2" fill="#FF8200"/>
+    <rect x="5.4" y="1.4" width="4" height="17.2" fill="#00534E"/>
+    <circle cx="20" cy="10" r="3" fill="#FFB700"/>
+  </symbol>
+  <symbol id="flag-eg" viewBox="0 0 30 20">
+    <rect width="30" height="20" fill="#CE1126"/>
+    <rect y="6.67" width="30" height="6.67" fill="#fff"/>
+    <rect y="13.33" width="30" height="6.67" fill="#000"/>
+    <circle cx="15" cy="10" r="1.6" fill="#C09A2E"/>
+  </symbol>
+  <symbol id="flag-id" viewBox="0 0 30 20">
+    <rect width="30" height="20" fill="#fff"/>
+    <rect width="30" height="10" fill="#CE1126"/>
+  </symbol>
+</svg>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <img class="logo-img" src="logo.png" alt="foxup" width="1000" height="349" fetchpriority="high">
+    <nav class="navlinks">
+      <a href="#advantages">Why FoxUp</a>
+      <a href="#features">Product</a>
+      <a href="#how">How it works</a>
+      <a href="#services">Services</a>
+    </nav>
+    <a class="btn btn-coral" href="#contact">
+      Talk to sales
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-heading">
+      <h1 class="hero-h" data-reveal>The recharge app that lives <em>inside</em><br/>your card terminal.</h1>
+    </div>
+
+    <div class="stage-col">
+    <div class="stage" data-reveal>
+      <div class="device-fx"></div>
+      <div class="term-frame">
+        <img class="term-img" src="POS-Terminal.png" alt="foxup card payment terminal accepting mobile recharge and bill payments in the UAE" width="425" height="969" fetchpriority="high" />
+      </div>
+    </div>
+    </div>
+
+    <div class="hero-desc">
+      <p class="hero-sub" data-reveal>foxup isn't a separate app on a phone. It runs on the same POS terminal your customers already tap or swipe their card on, so regular card payments and recharge or bill payments are both paid for right there by card. You can also top up your wallet balance directly on the terminal.</p>
+      <div class="hero-ctas" data-reveal>
+        <a class="btn btn-coral" href="#contact">Become a merchant</a>
+        <a class="btn btn-ghost" href="#features">See the product ↓</a>
+      </div>
+      <div class="hero-proof" data-reveal>
+        <div class="proof-item"><div class="num">1</div><div class="lbl">POS terminal, no extra app</div></div>
+        <div class="proof-item"><div class="num">20+</div><div class="lbl">Recharge &amp; bill services</div></div>
+        <div class="proof-item"><div class="num">&lt;10s</div><div class="lbl">Wallet settlement</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-sec">
+  <div class="marquee" id="marquee">
+    <span>Mobile top ups</span><span>International recharge</span><span>Utility bills</span><span>Data bundles</span><span>Merchant wallet</span><span>Instant commission</span>
+    <span>Mobile top ups</span><span>International recharge</span><span>Utility bills</span><span>Data bundles</span><span>Merchant wallet</span><span>Instant commission</span>
+  </div>
+</div>
+
+<!-- ============ ADVANTAGES ============ -->
+<section class="sec" id="advantages">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="tag">Why foxup</span>
+      <h2 class="sec-h">Built for how UAE merchants actually get paid.</h2>
+      <p class="sec-p">Kiosks are bulky and slow to settle. Cash needs a trip to the bank. foxup replaces both with one terminal that pays you back the moment a sale closes.</p>
+    </div>
+    <div class="adv-grid">
+      <div class="adv-card" data-reveal>
+        <div class="adv-ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg></div>
+        <h3>Instant settlement</h3>
+        <p>Commission and sale proceeds land in your wallet the second a transaction is approved, not next day, not on a schedule.</p>
+      </div>
+      <div class="adv-card" data-reveal>
+        <div class="adv-ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="3"/><path d="M9 18h6"/></svg></div>
+        <h3>Built in merchant wallet</h3>
+        <p>Top up by terminal or manual cash load, then spend, settle bills, or cash out, all from a balance you can see live.</p>
+      </div>
+      <div class="adv-card" data-reveal>
+        <div class="adv-ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/></svg></div>
+        <h3>Card &amp; contactless ready</h3>
+        <p>Accept credit and debit cards on a terminal that's smaller and more energy efficient than a conventional recharge kiosk.</p>
+      </div>
+      <div class="adv-card" data-reveal>
+        <div class="adv-ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M8 8h5M8 16h5"/></svg></div>
+        <h3>Made for the community</h3>
+        <p>Mobile top ups, international recharge and data bundles tuned to the operators the UAE's Indian and Pakistani expats use most.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURE SHOWCASE ============ -->
+<section class="sec" id="features">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="tag">The product</span>
+      <h2 class="sec-h">One terminal. Every recharge, bill and payment.</h2>
+      <p class="sec-p">A closer look at how foxup turns a single compact device into a full service counter for your customers.</p>
+    </div>
+
+    <div class="feat-row">
+      <div data-reveal>
+        <span class="feat-index">01. Merchant Wallet</span>
+        <h3>Your balance, always live, always yours.</h3>
+        <p>Every terminal is tied to a merchant wallet. Load it by card on the device itself or top up manually with cash, either way, your balance updates immediately and is ready to spend on stock, bills or a cash out.</p>
+        <ul class="feat-list">
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Top up via terminal or manual cash load</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Real time balance, credit and commission view</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>No separate settlement account to manage</li>
+        </ul>
+      </div>
+      <div class="visual-card" data-reveal>
+        <div class="visual-inner">
+          <div class="v-wallet">
+            <div class="row1"><span class="pill">Wallet</span><span class="pill">Live</span></div>
+            <div class="big" id="counter">AED 0.00</div>
+            <div class="sub">Available balance · updated just now</div>
+            <div class="bars" id="bars"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feat-row rev">
+      <div data-reveal>
+        <span class="feat-index">02. The Terminal</span>
+        <h3>Compact hardware, full card acceptance.</h3>
+        <p>The foxup terminal is purpose built to sit on a small counter, with a smaller footprint and lower power draw than a conventional recharge kiosk, without giving up card and contactless acceptance.</p>
+        <ul class="feat-list">
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Credit &amp; debit card acceptance built in</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Compact footprint, low energy draw</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Touchscreen for recharge, bills and wallet in one</li>
+        </ul>
+      </div>
+      <div class="visual-card" data-reveal>
+        <div class="visual-inner">
+          <div class="spec-grid vi-mono">
+            <div class="spec"><div class="l">Footprint</div><div class="v">Compact</div></div>
+            <div class="spec"><div class="l">Power draw</div><div class="v">Low energy</div></div>
+            <div class="spec"><div class="l">Payments</div><div class="v">Card + Tap</div></div>
+            <div class="spec"><div class="l">Display</div><div class="v">Touchscreen</div></div>
+            <div class="spec"><div class="l">Wallet</div><div class="v">Built in</div></div>
+            <div class="spec"><div class="l">Setup</div><div class="v">Plug &amp; go</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feat-row">
+      <div data-reveal>
+        <span class="feat-index">03. Instant Settlement</span>
+        <h3>From sale to wallet, with nothing in between.</h3>
+        <p>There's no batch, no next business day transfer. The moment a card payment or recharge is approved, your commission is credited and your wallet balance moves, visible on the terminal itself.</p>
+        <ul class="feat-list">
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Commission credited on approval</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>No manual reconciliation at day end</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Full transaction history on the wallet</li>
+        </ul>
+      </div>
+      <div class="visual-card" data-reveal>
+        <div class="visual-inner">
+          <div class="flow">
+            <div class="flow-step active"><div class="flow-dot">01</div><div class="flow-txt"><b>Customer taps card</b><span>Payment authorised on terminal</span></div></div>
+            <div class="flow-line"></div>
+            <div class="flow-step active"><div class="flow-dot">02</div><div class="flow-txt"><b>Sale approved</b><span>Recharge or bill fulfilled instantly</span></div></div>
+            <div class="flow-line"></div>
+            <div class="flow-step active"><div class="flow-dot">03</div><div class="flow-txt"><b>Wallet updated</b><span>Commission credited, balance live</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feat-row rev">
+      <div data-reveal>
+        <span class="feat-index">04. Services</span>
+        <h3>One counter for everything your customers need.</h3>
+        <p>Mobile top ups and international recharge, data bundles, entertainment vouchers and utility bill payments, all run through the same terminal, the same wallet, the same settlement.</p>
+        <ul class="feat-list">
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Local &amp; international mobile recharge</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Utility and government bill payments</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Data, gaming and entertainment top ups</li>
+        </ul>
+      </div>
+      <div class="visual-card" data-reveal>
+        <div class="visual-inner">
+          <div class="svc-grid">
+            <div class="svc"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg><span>Mobile top up</span></div>
+            <div class="svc"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18 15 15 0 010-18z"/></svg><span>International</span></div>
+            <div class="svc"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 11-14h-7z"/></svg><span>Data bundles</span></div>
+            <div class="svc"><svg viewBox="0 0 24 24"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg><span>Utility bills</span></div>
+            <div class="svc"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M8 20v-4a4 4 0 018 0v4"/></svg><span>Entertainment</span></div>
+            <div class="svc"><svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20"/></svg><span>+ more</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="sec" id="how" style="background:var(--indigo-050);">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="tag">Getting started</span>
+      <h2 class="sec-h">From application to accepting cards.</h2>
+      <p class="sec-p">Onboarding a foxup terminal takes three steps, no long integration cycle, no waiting on hardware.</p>
+    </div>
+    <div class="steps-wrap">
+      <div class="steps">
+        <div class="step" data-reveal>
+          <div class="step-head">
+            <div class="step-num">01</div>
+            <div class="step-rule"></div>
+            <svg class="step-ic" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 01-9 8.4 8.5 8.5 0 01-3.9-.9L3 20.5l1.5-4.5A8.4 8.4 0 013.6 12 8.5 8.5 0 0112 3.5a8.4 8.4 0 019 8z"/></svg>
+          </div>
+          <h4>Apply as a merchant</h4>
+          <p>Tell us about your shop over WhatsApp or the form below. We confirm eligibility and set up your merchant wallet.</p>
+        </div>
+        <div class="step" data-reveal>
+          <div class="step-head">
+            <div class="step-num">02</div>
+            <div class="step-rule"></div>
+            <svg class="step-ic" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/></svg>
+          </div>
+          <h4>Receive &amp; activate your terminal</h4>
+          <p>Your compact foxup terminal arrives ready to go. Plug in, connect, and it's linked to your wallet from the first tap.</p>
+        </div>
+        <div class="step" data-reveal>
+          <div class="step-head">
+            <div class="step-num">03</div>
+            <div class="step-rule"></div>
+            <svg class="step-ic" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/></svg>
+          </div>
+          <h4>Start selling, get paid instantly</h4>
+          <p>Accept cards, sell recharges and settle bills. Every approved sale credits your wallet immediately.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COVERAGE: COUNTRIES / CARRIERS / BILLS ============ -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="tag">Coverage</span>
+      <h2 class="sec-h">Built for where your customers are from.</h2>
+      <p class="sec-p">foxup covers the recharge destinations, mobile carriers, everyday UAE bills and gaming &amp; entertainment vouchers your customers actually use, all from one terminal.</p>
+    </div>
+
+    <div class="cov-block" data-reveal>
+      <div class="cov-h"><h3>Countries for international recharge</h3><span>20+ destinations supported</span></div>
+      <div class="chip-grid">
+        <div class="chip"><svg class="flag-ic"><use href="#flag-in"/></svg>India</div>
+        <div class="chip"><svg class="flag-ic"><use href="#flag-pk"/></svg>Pakistan</div>
+        <div class="chip"><svg class="flag-ic"><use href="#flag-bd"/></svg>Bangladesh</div>
+        <div class="chip"><svg class="flag-ic"><use href="#flag-np"/></svg>Nepal</div>
+        <div class="chip"><svg class="flag-ic"><use href="#flag-ph"/></svg>Philippines</div>
+        <div class="chip"><svg class="flag-ic"><use href="#flag-lk"/></svg>Sri Lanka</div>
+        <div class="chip"><svg class="flag-ic"><use href="#flag-eg"/></svg>Egypt</div>
+        <div class="chip"><svg class="flag-ic"><use href="#flag-id"/></svg>Indonesia</div>
+        <div class="chip more">+ 12 more countries</div>
+      </div>
+    </div>
+
+    <div class="cov-block" data-reveal>
+      <div class="cov-h"><h3>Major carriers, by country</h3><span>Local &amp; international networks</span></div>
+      <div class="carrier-grid">
+        <div class="carrier-col">
+          <div class="country"><svg class="flag-ic"><use href="#flag-ae"/></svg>UAE</div>
+          <ul>
+            <li><span class="logo-tile"><img src="logos/etisalat.svg" alt="" loading="lazy" decoding="async"></span>Etisalat</li>
+            <li><span class="logo-tile"><img src="logos/du.png" alt="" loading="lazy" decoding="async"></span>du</li>
+          </ul>
+        </div>
+        <div class="carrier-col">
+          <div class="country"><svg class="flag-ic"><use href="#flag-in"/></svg>India</div>
+          <ul>
+            <li><span class="logo-tile"><img src="logos/airtel.svg" alt="" loading="lazy" decoding="async"></span>Airtel</li>
+            <li><span class="logo-tile"><img src="logos/jio.svg" alt="" loading="lazy" decoding="async"></span>Jio</li>
+            <li><span class="logo-tile"><img src="logos/vi.svg" alt="" loading="lazy" decoding="async"></span>Vi</li>
+            <li><span class="logo-tile"><img src="logos/bsnl.png" alt="" loading="lazy" decoding="async"></span>BSNL</li>
+          </ul>
+        </div>
+        <div class="carrier-col">
+          <div class="country"><svg class="flag-ic"><use href="#flag-pk"/></svg>Pakistan</div>
+          <ul>
+            <li><span class="dot" style="background:var(--coral-500);">J</span>Jazz</li>
+            <li><span class="dot" style="background:var(--indigo-900);">Z</span>Zong</li>
+            <li><span class="logo-tile"><img src="logos/ufone.png" alt="" loading="lazy" decoding="async"></span>Ufone</li>
+          </ul>
+        </div>
+        <div class="carrier-col">
+          <div class="country"><svg class="flag-ic"><use href="#flag-bd"/></svg>Bangladesh</div>
+          <ul>
+            <li><span class="dot" style="background:var(--indigo-900);">G</span>Grameenphone</li>
+            <li><span class="logo-tile" style="background:#E30B13;"><img src="logos/robi.svg" alt="" loading="lazy" decoding="async"></span>Robi</li>
+            <li><span class="logo-tile"><img src="logos/banglalink.svg" alt="" loading="lazy" decoding="async"></span>Banglalink</li>
+            <li><span class="dot" style="background:var(--indigo-700);">T</span>Teletalk</li>
+          </ul>
+        </div>
+        <div class="carrier-col">
+          <div class="country"><svg class="flag-ic"><use href="#flag-np"/></svg>Nepal</div>
+          <ul>
+            <li><span class="dot" style="background:var(--coral-500);">N</span>Ncell</li>
+            <li><span class="logo-tile"><img src="logos/ntc.jpg" alt="" loading="lazy" decoding="async"></span>NTC</li>
+          </ul>
+        </div>
+        <div class="carrier-col more">+ more countries &amp; carriers added regularly</div>
+      </div>
+    </div>
+
+    <div class="cov-block" data-reveal>
+      <div class="cov-h"><h3>Everyday UAE bills &amp; payments</h3><span>Utilities, tolls &amp; transport</span></div>
+      <div class="bill-grid">
+        <div class="bill-chip">
+          <div class="bill-ic pad"><img src="logos/eand.svg" alt="e&amp;" loading="lazy" decoding="async"></div>
+          e&amp; bill
+        </div>
+        <div class="bill-chip">
+          <div class="bill-ic pad"><img src="logos/du.png" alt="du" loading="lazy" decoding="async"></div>
+          du bill
+        </div>
+        <div class="bill-chip">
+          <div class="bill-ic"><img src="logos/sewa.png" alt="SEWA" loading="lazy" decoding="async"></div>
+          SEWA
+        </div>
+        <div class="bill-chip">
+          <div class="bill-ic"><img src="logos/fewa.png" alt="FEWA" loading="lazy" decoding="async"></div>
+          FEWA
+        </div>
+        <div class="bill-chip">
+          <div class="bill-ic"><img src="logos/nol.png" alt="NOL" loading="lazy" decoding="async"></div>
+          NOL
+        </div>
+        <div class="bill-chip">
+          <div class="bill-ic"><img src="logos/parkin.png" alt="Parkin" loading="lazy" decoding="async"></div>
+          Parkin
+        </div>
+        <div class="bill-chip">
+          <div class="bill-ic"><img src="logos/salik.png" alt="Salik" loading="lazy" decoding="async"></div>
+          Salik
+        </div>
+        <div class="bill-chip more">
+          <div class="bill-ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+          + more bills
+        </div>
+      </div>
+    </div>
+
+    <div class="cov-block" data-reveal>
+      <div class="cov-h"><h3>Gaming &amp; entertainment vouchers</h3><span>Digital gift cards &amp; top-ups</span></div>
+      <div class="bill-grid">
+        <div class="bill-chip">
+          <div class="bill-ic"><img src="logos/xbox.svg" alt="Xbox" loading="lazy" decoding="async"></div>
+          Xbox
+        </div>
+        <div class="bill-chip">
+          <div class="bill-ic"><img src="logos/pubgmobile.png" alt="PUBG Mobile" loading="lazy" decoding="async"></div>
+          PUBG Mobile
+        </div>
+        <div class="bill-chip">
+          <div class="bill-ic pad"><img src="logos/icloud.svg" alt="iCloud" loading="lazy" decoding="async"></div>
+          iCloud
+        </div>
+        <div class="bill-chip">
+          <div class="bill-ic"><img src="logos/itunes.svg" alt="iTunes" loading="lazy" decoding="async"></div>
+          iTunes
+        </div>
+        <div class="bill-chip">
+          <div class="bill-ic pad"><img src="logos/googleplay.svg" alt="Google Play" loading="lazy" decoding="async"></div>
+          Google Play
+        </div>
+        <div class="bill-chip more">
+          <div class="bill-ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+          + more vouchers
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-sec" id="contact">
+  <div class="wrap">
+    <div class="cta-box" data-reveal>
+      <h2>Let's get your counter<br/>accepting cards this week.</h2>
+      <p>Message our team on WhatsApp for pricing, terminal availability and onboarding, usually answered within minutes.</p>
+      <div class="cta-btns">
+        <a class="btn btn-whatsapp" href="https://wa.me/971526989355?text=Hi%20foxup%2C%20I%27d%20like%20to%20know%20more%20about%20becoming%20a%20merchant." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.44-1.35a9.9 9.9 0 004.6 1.14h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.51 2 12.04 2zm5.8 14.02c-.24.68-1.39 1.3-1.92 1.38-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.7-4.11-4.84-4.3-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.24-.26.53-.32.71-.32.18 0 .35.001.5.008.16.007.38-.06.59.45.24.58.81 2 . 88 2.14.07.14.11.31.02.5-.09.19-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.16-.19.68-.79.86-1.06.18-.28.35-.23.59-.14.24.09 1.53.72 1.79.85.26.13.44.19.5.3.07.11.07.62-.17 1.3z"/></svg>
+          Chat on WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="mailto:sales@foxuppay.com" style="border-color:rgba(255,255,255,.25); color:#fff;">Email us instead</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="logo-img" src="logo.png" alt="foxup" width="1000" height="349" loading="lazy">
+        <p>Card payments, recharge and utility bills: one compact terminal, one merchant wallet, settled instantly.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h5>Product</h5>
+          <a href="#advantages">Why foxup</a>
+          <a href="#features">Features</a>
+          <a href="#how">How it works</a>
+        </div>
+        <div class="foot-col">
+          <h5>Get in touch</h5>
+          <a href="https://wa.me/971526989355" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="mailto:sales@foxuppay.com">sales@foxuppay.com</a>
+          <a href="tel:+971526989355">+971 52 698 9355</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 foxup. All rights reserved.</span>
+      <span>Dubai, UAE</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/971526989355?text=Hi%20foxup%2C%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.44-1.35a9.9 9.9 0 004.6 1.14h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.51 2 12.04 2zm5.8 14.02c-.24.68-1.39 1.3-1.92 1.38-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.7-4.11-4.84-4.3-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.24-.26.53-.32.71-.32.18 0 .35.001.5.008.16.007.38-.06.59.45.24.58.81 2 .88 2.14.07.14.11.31.02.5-.09.19-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.16-.19.68-.79.86-1.06.18-.28.35-.23.59-.14.24.09 1.53.72 1.79.85.26.13.44.19.5.3.07.11.07.62-.17 1.3z"/></svg>
+</a>
+
+<script>
+  // nav scroll state
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 30);
+  });
+
+  // reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
+
+  // wallet balance count-up
+  const counterEl = document.getElementById('counter');
+  function animateCount(el, target, prefix, duration) {
+    const start = performance.now();
+    function tick(now) {
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = prefix + (target * eased).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  const deviceObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        animateCount(counterEl, 4218.90, 'AED ', 1400);
+        deviceObserver.disconnect();
+      }
+    });
+  }, { threshold: 0.4 });
+  if (counterEl) deviceObserver.observe(counterEl.closest('.visual-inner'));
+
+  // wallet bars visual (feature 01)
+  const bars = document.getElementById('bars');
+  if (bars) {
+    const heights = [40, 62, 48, 80, 55, 92, 70, 100];
+    heights.forEach((h, i) => {
+      const b = document.createElement('div');
+      b.className = 'bar';
+      b.style.height = '0%';
+      bars.appendChild(b);
+      setTimeout(() => { b.style.transition = 'height .8s cubic-bezier(.16,.84,.44,1)'; b.style.height = h + '%'; }, 150 + i * 70);
+    });
+  }
+
+  // adv-card 3D tilt on hover (subtle, mouse-based)
+  document.querySelectorAll('.adv-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const r = card.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width - 0.5;
+      const py = (e.clientY - r.top) / r.height - 0.5;
+      card.style.transform = `perspective(800px) rotateX(${-py * 8}deg) rotateY(${px * 8}deg) translateY(-6px)`;
+    });
+    card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+  });
+</script>
+</body>
+</html>
