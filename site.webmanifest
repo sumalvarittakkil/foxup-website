@@ -1,7 +1,7 @@
 {
-  "name": "foxup",
-  "short_name": "foxup",
-  "description": "Card payments, mobile recharge and UAE bill payments on one compact terminal.",
+  "name": "FoxUP",
+  "short_name": "FoxUP",
+  "description": "Empowering Retailers. One handheld for mobile recharge, UAE bill payments and vouchers, cash or card.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FBFBFD",

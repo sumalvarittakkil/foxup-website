@@ -1,8 +1,8 @@
-# foxup — Card Payments, Recharge & Bill Pay
+# FoxUP — Empowering Retailers
 
-Marketing site for **foxup**, a card payment terminal that also sells mobile
-recharge (local & international), UAE bill payments, and gaming/entertainment
-vouchers for merchants across Dubai and the UAE.
+Marketing site for **FoxUP**, a handheld terminal that lets retailers sell mobile
+recharge (local & international), UAE bill payments and gaming vouchers to
+customers paying cash or card, earning commission on every sale.
 
 Hosted on GitHub Pages at **foxuppay.com**.
 
